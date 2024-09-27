@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161622"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="273dp"
+        android:paddingBottom="8dp"
+        android:text="Balance: $0.00"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/cardNumberTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/card2"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <ImageButton
+        android:id="@+id/currencyButton"
+        android:layout_width="388dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:background="#161622"
+        android:contentDescription="Add Account Currency"
+        android:src="@drawable/cardnew"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876" />
+
+    <ImageButton
+        android:id="@+id/depositButton"
+        android:layout_width="74dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="56dp"
+        android:background="#161622"
+        android:contentDescription="Deposit"
+        android:src="@drawable/deposit"
+        app:layout_constraintBottom_toTopOf="@+id/currencyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/withdrawButton"
+        android:layout_width="74dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="56dp"
+        android:background="#161622"
+        android:contentDescription="Withdraw"
+        android:src="@drawable/withdraw"
+        app:layout_constraintBottom_toTopOf="@+id/currencyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <ImageButton
+        android:id="@+id/transferButton"
+        android:layout_width="74dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="56dp"
+        android:background="#161622"
+        android:contentDescription="Transfer"
+        android:src="@drawable/send"
+        app:layout_constraintBottom_toTopOf="@+id/currencyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/historyButton"
+        android:layout_width="74dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="56dp"
+        android:background="#161622"
+        android:contentDescription="View Transaction History"
+        android:src="@drawable/transaction"
+        app:layout_constraintBottom_toTopOf="@+id/currencyButton"
+        app:layout_constraintEnd_toStartOf="@+id/withdrawButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Total Balance"
+        android:textColor="#CACACA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/balanceTextView" />
+
+    <TextView
+        android:id="@+id/BANK"
+        android:layout_width="67dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="239dp"
+        android:layout_marginBottom="90dp"
+        android:text="BANK"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardNumberTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/BANK23"
+        android:layout_width="63dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="95dp"
+        android:text="PRO"
+        android:textAllCaps="false"
+        android:textColor="#022BF8"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardNumberTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/viewCardDetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currencyButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="127dp"
+        android:backgroundTint="#2567F9"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="29dp"
+        android:text="View Card Details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currencyButton" />
+
+
+    <!-- Other TextViews and layout elements can go here -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
